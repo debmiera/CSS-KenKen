@@ -5,3 +5,59 @@
 html {
   font-size: 10px;
 }
+
+body {
+  width: 475px;
+  height: 475px;
+  margin: 20px auto;
+  background-color: aqua;
+}
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    width: 475px;
+    height: 475px;
+  }
+
+  .grid-items {
+    border: 0.1rem solid gray;
+    font-size: 2rem;
+    background-color: white;
+  }
+
+  #box3, #box7, #box10, #box11, #box12 {
+    border-left: 0.5rem solid black;
+  }
+
+  #box1, #box2, #box3, #box4, #box5, #box8, #box9, #box10, #box11 {
+    border-bottom: 0.5rem solid black;
+  }
+
+  .prompt {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+  }
+
+  .answer {
+    width: 50%;
+    height: 50%;
+    text-align: center;
+  }
+
+  .special {
+    border: none;
+    font-size: 2rem;
+  }
+
+  @media only screen and (min-width: 475px){
+    html {
+      font-size: 16px;
+    }
+  }
+
+
+
+
